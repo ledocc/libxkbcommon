@@ -56,3 +56,15 @@ option(
     value: true,
     description: 'Enable support for Wayland utility programs',
 )
+option(
+    'use-static-xcb',
+    type: 'boolean',
+    value: false,
+    description: 'Try to use static version of libxcb and libxcb-xkb when link with xkbcommon-x11',
+)
+option(
+    'use-static-wayland',
+    type: 'boolean',
+    value: false,
+    description: 'Try to use static version of wayland-{client,protocol,scanner} when link with interactive-wayland',
+)
